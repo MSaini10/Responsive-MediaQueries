@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Varela+Round');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/*Start */
+
+body {
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+
+h1, h2 {
+	font-family: 'Varela Round', sans-serif;
+}
+
+h1 { 
+	color: #56C5D0;
+	font-size: 24px;
+	margin-bottom: 16px;
+ }
+
+h2 {
+	font-size: 18px;
+}
+
+p {
+	line-height: 1.5;				/*1 is 100% and 1.5 is 150%*/
+}
+
+header {
+	margin-bottom: 32px;
+}
+
+section {
+	min-height: 80px;
+	padding: 48px 16px;
+}
+
+footer {
+	background-color: #FAA74A;
+	min-height: 32px;
+	padding: 16px;
+	text-align: center;
+}
+
+a {text-decoration: none;}
+
+a:link {color: #FFF;}
+
+a:visited: {
+	color: #FFF;
+}
+
+a:hover {
+	color: #FFF;
+	background-color: #56C5D0;
+}
+
+
+
+/********************************
+ID & CLASSES
+**********************************/
+#container {
+	max-width: 319px;
+}
+
+.smallcolumn {
+	display: inline-block;
+	margin: 1%;
+	padding: 2%;
+	width: 94%;
+}
+
+.smallcolumn img {
+	display: block;
+	margin: 32px auto;
+	width: 85%;
+}
+
+.orange {
+	background-color: #FAA74A;
+}
+
+.orange h1 {								/*changes blue h1 of orange section and changes in only to white*/
+	color: #FFF;
+}
+
+.grey {
+	background-color: #F3F3F3;
+	color: #56C5D0;
+}
+
+.grey header img {
+	display: block;
+	margin: 0px auto;
+	width: 75%;
+}
+
+
+.button {
+	border: 5px solid #FFF;
+	padding: 7.5px 30px;
+}
+
+.centerButton {
+	margin-top: 64px;
+	text-align: center;
+}
+
+
+/****************************************
+Small phone to small tablet (320px-767px)
+******************************************/
+
+@media only screen and (min-width: 320px) {
+
+h1 {
+	font-size: 34px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+section {
+	min-height: 128px;									/*do not repeat the codes*/
+}
+
+
+
+/*******************************************
+IDs & Classes
+*****************************************/
+
+#container {
+	max-width: 767px; 	
+}
+
+.button {
+	padding: 15px 90px;
+}
+
+}
+
+/*************************************************
+Tablet (768px - 1023px)
+***************************************************/
+@media only screen and (min-width: 768px) {
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+}
+
+h2 {font-size: 28px;}
+
+p {font-size: 18px;}
+
+section {
+	min-height: 390px;
+	padding: 80px 32px;
+}
+
+/*******************************************
+IDs & Classes
+*****************************************/
+
+#container {
+	max-width: 1023px; 	
+}
+
+.button {
+	padding: 15px 200px;
+}
+
+.smallcolumn {
+	box-sizing: border-box;
+	margin: 5%;
+	text-align: left;
+	vertical-align: top;
+	width: 40%;
+}
+
+}
+
+
+/*************************************************
+Laptop/Desktop (1024px-1439px)
+***************************************************/
+
+@media only screen and (min-width: 1024px) {
+
+section {
+	min-height: 300px;
+}
+
+/*****************************************
+Classes and Id's
+**************************************/
+#container {
+	max-width: 1430px;
+}
+
+.row {
+	width: 870px;
+	margin: 0 auto;
+}
+}
+
+/*************************************************
+Desktop (1440px-1919px)
+***************************************************/
+@media only screen and (min-width: 1440px) {
+
+h1 {
+	font-size: 90px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+/*****************************************
+Classes and Id's
+**************************************/
+#container {width: 1919px}
+
+.row {
+	width: 1100px;
+}
+
+.grey header img {
+	width: 60%;
+}
+}
+
+
+/*************************************************
+Large Desktop (1920px - 2560px)
+***************************************************/
+@media only screen and (min-width: 1920px) {
+
+
+
+
+/*****************************************
+Classes and Id's
+**************************************/
+#container {
+	max-width: 3000px;
+}
+.row {
+	width: 1480px;
+}
+}
